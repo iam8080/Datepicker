@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan"
+    tools:context=".MainActivity">
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:datePickerMode="calendar"
+        android:id="@+id/dp"
+        />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text=""
+       android:id="@+id/txt"
+       android:layout_below="@id/dp"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="80dp"
+       android:textSize="27sp"
+       android:textColor="@color/olive_drab"
+        android:textStyle="bold"
+       />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt"
+        android:id="@+id/btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Seleted Date"
+        android:onClick="btnDate"
+        android:textSize="25sp"
+        />
+
+</RelativeLayout>
